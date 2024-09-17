@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thông tin Sản phẩm</title>
+    <style>
+        .container {
+            background-color: rgb(215, 235, 185);
+            width: 400px;
+            max-width: 600px;
+            margin: 30px auto;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .form-container {
+            display: flex;
+            flex-direction: column;
+            width: 300px;
+            margin: 50px auto;
+        }
+        
+        .form-group {
+            display: flex;
+            margin-bottom: 10px;
+            align-items: center;
+        }
+        
+        .form-group label {
+            width: 120px;
+            font-weight: bold;
+        }
+        
+        .tieude {
+            text-align: center;
+            font-size: 20px;
+            color: black;
+        }
+        
+        .form-group-button {
+            text-align: center;
+            font-size: 30px;
+        }
+        
+        .card-img-top {
+            width: 100%;
+            max-width: 300px;
+            margin-bottom: 20px;
+        }
+        
+        .card {
+            margin-top: 20px;
+            border: 1px solid #ccc;
+            padding: 15px;
+            width: 300px;
+            margin: 20px auto;
+            text-align: left;
+        }
+        
+        .card-title {
+            font-size: 1.25rem;
+            margin-bottom: 10px;
+        }
+        
+        .card-text {
+            margin-bottom: 15px;
+        }
+        
+        .card button {
+            background-color: #28a745;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        .card button:hover {
+            background-color: #218838;
+        }
+        
+        .tieude1 {
+            text-align: center;
+        }
+        
+        .card-title {
+            text-align: center;
+        }
+        
+        .card-text {
+            text-align: center;
+        }
+        
+        .card h2 {
+            text-align: center;
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="tieude">Thời trang nữ</h1>
+        <form id="product-form">
+            <div class="form-group">
+                <label for="product-name">Tên sản phẩm:</label>
+                <input type="text" id="product-name" name="product-name">
+            </div>
+
+            <div class="form-group">
+                <label for="product-old-price">Giá cũ:</label>
+                <input type="number" id="product-old-price" name="product-old-price">
+            </div>
+
+            <div class="form-group">
+                <label for="product-new-price">Giá mới:</label>
+                <input type="number" id="product-new-price" name="product-new-price">
+            </div>
+
+            <div class="form-group">
+                <label for="product-image">URL hình ảnh sản phẩm:</label>
+                <input type="url" id="product-image" name="product-image">
+            </div>
+
+            <div class="form-group">
+                <label for="product-code">Mã sản phẩm:</label>
+                <input type="text" id="product-code" name="product-code">
+            </div>
+
+            <div class="form-group-button">
+                <button type="button" onclick="displayProduct()">Hiển thị sản phẩm</button>
+            </div>
+        </form>
+
+        <div id="product-list">
+        </div>
+    </div>
+
+    <script src="test.js"></script>
+</body>
+
+</html>
